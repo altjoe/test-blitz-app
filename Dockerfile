@@ -1,4 +1,4 @@
-FROM node:16
+FROM node
 EXPOSE 3000
 
 COPY package.json ./
