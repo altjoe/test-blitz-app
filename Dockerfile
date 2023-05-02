@@ -2,7 +2,9 @@ FROM node
 
 ENV NODE_ENV=production
 
-WORKDIR /test-blitz-app
+RUN curl -L -o master.zip https://github.com/altjoe/test-blitz-app/archive/refs/heads/master.zip
+
+WORKDIR /master
 
 COPY ["package.json", "package-lock.json*", "./"]
 
